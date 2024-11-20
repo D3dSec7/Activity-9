@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    margin: 0;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+#content {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #333; /* Darker text color for better readability */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.button-container {
+    display: flex;
+    gap: 20px; 
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background color and transform */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#blue {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+}
+
+#blue:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#pink {
+    background-color: #ff69b4; /* Hot pink */
+    color: black;
+}
+
+#pink:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+#brown {
+    background-color: #8B4513; /* SaddleBrown */
+    color: white;
+}
+
+#brown:hover {
+    background-color: #5B3A29; /* Darker brown on hover */
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #content {
+        font-size: 20px; /* Smaller font size on smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text on smaller screens */
+    }
+}
