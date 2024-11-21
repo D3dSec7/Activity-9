@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,17 +15,18 @@ body {
     justify-content: center;
     height: 100vh; 
     margin: 0;
-    background-color: #f0f0f0; /* Light background color */
+    background-color: #f0f0f0;
+    animation: fadeIn 1s ease-in-out; 
 }
 
 #content {
     text-align: center;
     margin-bottom: 20px; 
-    color: #333; /* Darker text color for better readability */
-    transition: color 0.3s ease; /* Smooth transition for text color */
+    color: #333;
+    transition: color 0.3s ease; 
 }
 
-.button-container {
+.buttons {
     display: flex;
     gap: 20px; 
 }
@@ -27,48 +37,49 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background color and transform */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 button:hover {
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+    transform: scale(1.05); 
 }
 
 #blue {
-    background-color: #007bff; /* Bootstrap blue */
+    background-color: #007bff;
     color: white;
 }
 
 #blue:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 #pink {
-    background-color: #ff69b4; /* Hot pink */
+    background-color: #ff69b4;
     color: black;
 }
 
 #pink:hover {
-    background-color: #ff1493; /* Darker pink on hover */
+    background-color: #ff1493; 
 }
 
 #brown {
-    background-color: #8B4513; /* SaddleBrown */
+    background-color: #8B4513; 
     color: white;
 }
 
 #brown:hover {
-    background-color: #5B3A29; /* Darker brown on hover */
+    background-color: #5B3A29;
 }
 
-
-/* Responsive design */
-@media (max-width: 600px) {
-    #content {
-        font-size: 20px; /* Smaller font size on smaller screens */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-
-    button {
-        font-size: 14px; /* Smaller button text on smaller screens */
+    to {
+        opacity: 1;
     }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out; 
 }
